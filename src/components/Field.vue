@@ -19,10 +19,18 @@
     <div class="field__content field__content_change" v-else>
       <div class="field__input-wrapper">
         <input
+          v-if="field.pattern"
           class="input"
           :type="field.type"
           :placeholder="field.placeholder || field.label"
           v-mask="field.pattern"
+          v-model="field.value"
+        />
+        <input
+          v-else
+          class="input"
+          :type="field.type"
+          :placeholder="field.placeholder || field.label"
           v-model="field.value"
         />
       </div>
