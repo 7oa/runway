@@ -41,32 +41,36 @@
             />
           </div>
           <div class="input-wrapper input-wrapper_third">
-            <select
-              type="text"
-              placeholder="Страна"
-              class="select select_full select_sm"
-              v-model="country"
-            >
-              <option value="" disabled selected>Страна</option>
-              <option>Россия</option>
-              <option>США</option>
-              <option>Индия</option>
-              <option>Япония</option>
-            </select>
+            <div class="select select_full">
+              <select
+                type="text"
+                placeholder="Страна"
+                class="select__select select__select_sm"
+                v-model="country"
+              >
+                <option value="" disabled selected>Страна</option>
+                <option>Россия</option>
+                <option>США</option>
+                <option>Индия</option>
+                <option>Япония</option>
+              </select>
+            </div>
           </div>
           <div class="input-wrapper input-wrapper_third">
-            <select
-              type="text"
-              placeholder="Город"
-              class="select select_full select_sm"
-              v-model="city"
-            >
-              <option value="" disabled selected>Город</option>
-              <option>Москва</option>
-              <option>Лондон</option>
-              <option>Таллин</option>
-              <option>Сидней</option>
-            </select>
+            <div class="select select_full">
+              <select
+                type="text"
+                placeholder="Город"
+                class="select__select select__select_sm"
+                v-model="city"
+              >
+                <option value="" disabled selected>Город</option>
+                <option>Москва</option>
+                <option>Лондон</option>
+                <option>Таллин</option>
+                <option>Сидней</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="add-address-form__line">
