@@ -1,0 +1,156 @@
+.field {
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid $border;
+  border-bottom: none;
+  height: 49px;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &:last-of-type {
+    border-bottom: 1px solid $border;
+  }
+  &:hover {
+    background-color: $bg;
+  }
+  &__input-wrapper {
+    flex-grow: 1;
+  }
+  &__saved-value {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 11px;
+
+    span {
+      display: block;
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media screen and (max-width: 768px) {
+        max-width: 50vw;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    &_saved {
+      padding: 10px 16px 7px 7px;
+    }
+    &_change {
+      padding: 9px 16px 7px 7px;
+    }
+  }
+  &__placeholder {
+    color: $light-gray;
+  }
+  &__button {
+    width: 80px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.address-book {
+  border: 1px solid $border;
+  width: 100%;
+  margin: 0 auto;
+  &__current {
+    padding: 16px 18px 13px;
+    position: relative;
+    &_edit {
+      background-color: $bg;
+      border-bottom: 1px solid $border;
+    }
+  }
+  &__current-title {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  &__add {
+    padding: 20px 18px 30px;
+    border-top: 1px solid $border;
+    background-color: $bg;
+    margin-top: -1px;
+  }
+  &__add-title {
+    font-family: $f-OpenSans;
+    font-weight: $bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__add-button {
+    padding: 12px 20px 30px;
+  }
+  &__change-button {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+  }
+}
+.add-address-form {
+  &__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.address-item {
+  display: flex;
+  align-items: center;
+  &__check {
+    margin-right: 10px;
+  }
+  &__address {
+    flex-grow: 1;
+    height: 27px;
+  }
+  &__address-line {
+    font-size: 12px;
+    color: $gray;
+    line-height: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+    display: block;
+    @media screen and (max-width: 768px) {
+      max-width: 50vw;
+    }
+  }
+  &__button {
+    width: 80px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.subscription-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  &__input {
+    margin-right: 10px;
+  }
+  &__label {
+    font-size: 14px;
+  }
+}
